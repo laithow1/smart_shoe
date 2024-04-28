@@ -1,16 +1,27 @@
 package com.example.smart_shoe
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.media.MediaPlayer
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.speech.tts.TextToSpeech
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.TextPaint
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.Switch
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
@@ -39,8 +50,24 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tts: TextToSpeech
     private var currentName: String? = null // to check name
 
+    val dialog by lazy {
+        AlertDialog.Builder(this)
+            .setTitle("About Project")
+            .setMessage("Your project description here")
+            .setPositiveButton("OK") { _, _ ->
+                // Optional: Add actions if the laith clicks OK
+            }
+            .create()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val aboutButton: Button = findViewById(R.id.about_button)
+        aboutButton.setOnClickListener {
+            showAboutDialog()
+        }
 
         tts = TextToSpeech(this) { status ->
             if (status == TextToSpeech.SUCCESS) {
@@ -51,7 +78,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         // components definitions
-        setContentView(R.layout.activity_main)
         chart = findViewById(R.id.line_chart)
         dataTextView = findViewById(R.id.data_text_view)
         vibrationSwitch = findViewById(R.id.vibration_switch)
@@ -78,6 +104,7 @@ class MainActivity : AppCompatActivity() {
                 dataTextView.text = "Real-time Data: $value"
                 addEntry(value.toFloat(), timeSeconds) //python send int data we must convert it ,,,
             }
+
             override fun onCancelled(databaseError: DatabaseError) {
                 // Handle cancelled event
             }
@@ -94,6 +121,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
             override fun onCancelled(databaseError: DatabaseError) {
                 // Handle errors here aussi
             }
@@ -184,14 +212,61 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         handler.removeCallbacks(updateDataRunnable)
     }
+
     private fun speakText(text: String) {
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
     }
 
     private fun shouldExcludeWord(word: String): Boolean {
         val excludedWords = setOf("xxx", "vvv") // Add more words if needed like cane
-       // val excludedLetters = "poi" // Letters to exclude rasp
+        // val excludedLetters = "poi" // Letters to exclude rasp
         return excludedWords.contains(word.toLowerCase())
     }
+
+    private fun showAboutDialog() {
+        val message = " \n" +
+                "Al-Ahliyya Amman University Faculty of Engineering\n" +
+                "\n" +
+                "Smart Shoes for the Blind \n" +
+                "“Submitted in Partial Fulfillment of the Bachelor Degree in Computer and communication Engineering”\n" +
+                "\n" +
+                "Submitted by:\n" +
+                "Laith otoom  \n" +
+                "Under the supervision of:\n" +
+                "MSc. Muneera R.M Altyeb\n" +
+                "      \n link."
+        val spannableString = SpannableString(message)
+        // Define the clickable span for the link
+        val clickableSpan = object : ClickableSpan() {
+            override fun onClick(widget: View) {
+                // Handle click on the link (open the URL)
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/laithow1/smart-shoe"))
+
+                startActivity(intent)
+            }
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                // Customize the appearance of the link text (optional)
+                ds.isUnderlineText = true // Underline the link
+                ds.color = ContextCompat.getColor(this@MainActivity, androidx.appcompat.R.color.accent_material_dark) // Set link color
+            }
+        }
+        // Apply the clickable span to the specified range of text
+        val startIndex = message.indexOf("link")
+        val endIndex = startIndex + "link".length
+        spannableString.setSpan(clickableSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        // Create the AlertDialog with the SpannableString
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("About Project")
+            .setMessage(spannableString)
+            .setPositiveButton("OK") { _, _ ->
+                // Optional: Add actions if the user clicks OK
+            }
+            .create()
+        dialog.show()
+        // Enable clickable links in the AlertDialog
+        dialog.findViewById<TextView>(android.R.id.message)?.movementMethod = LinkMovementMethod.getInstance()
+    }
+
 
 }
