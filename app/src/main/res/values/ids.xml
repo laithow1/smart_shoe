@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="xxx" type="id" />
+    <item name="stepCountTextView" type="id" />
+    <item name="lineChart" type="id" />
+    <item name="valueProgressBar" type="id" />
+    <item name="start_button" type="id" />
+</resources>
