@@ -49,10 +49,10 @@ python -m venv --system-site-packages env
 source env/bin/activate
 
 Step 2 Next, clone this Git repo onto your Raspberry Pi virtual environmnet like this
-git clone https://github.com/Seeed-Studio/Seeed_Python_ReTerminal
+git clone https://github.com/laith-Studio/Seeed_Python_ReTerminal
 
 Step 3 Next, utilize our script to effortlessly install the required Python packages and download the EfficientDet-Lite model. Navigate to this folder.
-cd Seeed_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection_bookworm
+cd laith_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection_bookworm
 
 Step 3 The script install the required dependencies and download the TFLite models For this tutorial series.
 sh setup.sh
