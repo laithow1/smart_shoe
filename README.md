@@ -29,38 +29,41 @@ Make sure that you are in correct folder. If not
 cd laith_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection
 
 Make sure to install the dependencies and the EfficientDet model. If you've already completed this step in our first tutorial, there's no need to worry.
-
+```
 sh setup.sh
-
+```
 Run the code
-
+```
 python3 detect_mod.py
-
+```
 Let's run the code in BookWorm OS.
 Step 1 For that you need to create a Virtual environmnet.
 NOTE
 In earlier OS versions, Python libraries could be directly installed system-wide using pip, the Python package installer. However, in Bookworm and subsequent releases, a shift has occurred. To mitigate potential issues during installation, it is now necessary to install packages via pip into a Python virtual environment using venv.
 
 Execute these commands one by one, and you will end up with a virtual environment.
-
+```
 mkdir my_project
 cd my_project
 python -m venv --system-site-packages env
 source env/bin/activate
-
+```
 Step 2 Next, clone this Git repo onto your Raspberry Pi virtual environmnet like this
+```
 git clone [https://github.com/laithow1/laith_Python_ReTerminal](https://github.com/laithow1/laith_Python_ReTerminal-main)
-
+```
 Step 3 Next, utilize our script to effortlessly install the required Python packages and download the EfficientDet-Lite model. Navigate to this folder.
+```
 cd laith_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection_bookworm
-
+```
 Step 3 The script install the required dependencies and download the TFLite models For this tutorial series.
+```
 sh setup.sh
-
+```
 Run the code
-
+```
 python3 detect_picam.py
-
+```
 # smart-shoe
 # Python Library for reTerminal
 
