@@ -1,18 +1,22 @@
 ﻿# smart-shoe
  Introduction
-Object detection on edge computers has become a pivotal field in computer vision, enabling devices to autonomously perceive and respond to their surroundings. EfficientDet, a state-of-the-art object detection model, takes center stage in this domain. Designed to be resource-efficient, it strikes a balance between accuracy and computational demands, making it particularly well-suited for deployment on edge devices with limited processing power. Object detection on edge computers, exemplified by EfficientDet, finds applications in scenarios ranging from smart surveillance cameras and autonomous vehicles to Internet of Things (IoT) devices. Its ability to identify and locate multiple objects in real-time makes it a key enabler for enhancing the autonomy and intelligence of edge computing systems.
+IoT-based smart shoes for the blind are made using ultrasonic sensors connected to an raspberry pi board. IoT communicates with objects or people through physical objects. Technology has grown and grown in the market.
+It is extremely difficult for a blind person to move independently. They should always be dependent on others in many areas of their lives. One of the biggest problems is that they have to walk the streets. They can't figure out every obstacle in the way with an ordinary stick. So these smart shoes offer them a long-term solution. Plus, it will help them reach their destination stress-free and independently. Built with IoT technology, the shoe has multiple sensors, microcontrollers, and buzzers embedded in it. If there is an obstacle in front of the user, in our project the shoe will sound a warning through a buzzer. the integrated cam detect objects andetify them and spell the name of object to blind person via android app  Smart shoes coordinate and communicate with each other to ensure that users do not collide with obstacles.
+
 
 Getting Start
 Before you start this project, you may need to prepare your hardware and software in advance as described here.
 
-Hardware preparation
-reTerminal	PiCam
+Hardware preparation:
 
+rasberry pi 
+PiCam
+ultrasonic sensor
+buzzer
 
-Get One Now 🖱️
-📚 Learn More
 Software Preparation
-We recommend installing the Bullesye or Bookworm version of Raspberry Pi 64 bit OS from their official website. If you prefer to install a new Raspbian OS, please follow the steps outlined in this guide.
+We recommend installing the Bullesye or Bookworm version of Raspberry Pi 64 bit OS from their official website. If you prefer to install a new Raspbian OS,
+please follow the steps outlined in this guide https://www.raspberrypi.com/news/bookworm-the-new-version-of-raspberry-pi-os/.
 
 NOTE
 We highly recommend checking out our previous tutorial on Getting started with OpenCV, as this tutorial serves as a continuation in our series. This guide is specifically for Bulleseye OS and Bookworm OS. Please take note of the installation dependencies, as there are two distinct methods outlined here.
