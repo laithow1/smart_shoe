@@ -32,14 +32,14 @@ picam2.start()
 
 # Initialize Pyrebase
 config = {
-    "apiKey": "AIzaSyBcqdZCYT_QvN3ekr2rM52R_iVgCQMsSxE",
-    "authDomain": "double-vehicle-419406.firebaseapp.com",
-    "databaseURL": "https://double-vehicle-419406-default-rtdb.firebaseio.com",
-    "projectId": "double-vehicle-419406",
-    "storageBucket": "double-vehicle-419406.appspot.com",
-    "messagingSenderId": "813850733586",
-    "appId": "1:813850733586:web:073cde7f7bc67eb9053ccb",
-    "measurementId": "G-2GZENZ1VSZ"
+    "apiKey": "                 ",
+    "authDomain": "                    ",
+    "databaseURL": "                      ",
+    "projectId": "                     ",
+    "storageBucket": "                      ",
+    "messagingSenderId": "                      ",
+    "appId": "                      ",
+    "measurementId": "                         "
 }
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
