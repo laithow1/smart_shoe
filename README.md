@@ -51,7 +51,7 @@ source env/bin/activate
 ```
 Step 2 Next, clone this Git repo onto your Raspberry Pi virtual environmnet like this
 ```
-git clone [https://github.com/laithow1/laith_Python_ReTerminal](https://github.com/laithow1/laith_Python_ReTerminal-main)
+git clone https://github.com/laithow1/laith_Python_ReTerminal
 ```
 Step 3 Next, utilize our script to effortlessly install the required Python packages and download the EfficientDet-Lite model. Navigate to this folder.
 ```
