@@ -26,7 +26,7 @@ EfficientDet is a highly efficient and accurate object detection model that stan
 Let's run the code in Bullseye OS.
 Make sure that you are in correct folder. If not
 
-cd Seeed_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection
+cd laith_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection
 
 Make sure to install the dependencies and the EfficientDet model. If you've already completed this step in our first tutorial, there's no need to worry.
 
