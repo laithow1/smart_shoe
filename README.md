@@ -1,5 +1,5 @@
-﻿# smart-shoe
- Introduction
+﻿# Smart-Shoe for blind
+Introduction
 IoT-based smart shoes for the blind are made using ultrasonic sensors connected to an raspberry pi board. IoT communicates with objects or people through physical objects. Technology has grown and grown in the market.
 It is extremely difficult for a blind person to move independently. They should always be dependent on others in many areas of their lives. One of the biggest problems is that they have to walk the streets. They can't figure out every obstacle in the way with an ordinary stick. So these smart shoes offer them a long-term solution. Plus, it will help them reach their destination stress-free and independently. Built with IoT technology, the shoe has multiple sensors, microcontrollers, and buzzers embedded in it. If there is an obstacle in front of the user, in our project the shoe will sound a warning through a buzzer. the integrated cam detect objects andetify them and spell the name of object to blind person via android app  Smart shoes coordinate and communicate with each other to ensure that users do not collide with obstacles.
 
@@ -263,8 +263,12 @@ if __name__ == '__main__':
   main()
 
 ```
+Run the code
+```
+python3 laith.py
+```
 
-this code bellow calculate the real-time distance via ultrasonic sensor and send the value via firebase ver pyrbase,physical buzzer run too plz save this python code at ur rasp and run it at startup using this tutorial https://linuxconfig.org/how-to-autostart-python-script-on-raspberry-pi
+this code bellow calculate the real-time distance via ultrasonic sensor and send the value via firebase ver pyrbase,physical buzzer run too plz save this python code at ur rasp and run it at startup using this tutorial https://linuxconfig.org/how-to-autostart-python-script-on-raspberry-pi.
 ```
 import RPi.GPIO as GPIO
 import time
@@ -272,14 +276,14 @@ import pyrebase
 
 # Firebase configuration (replace with your own credentials)
 config = {
-  "apiKey": "AIzaSyBcqdZCYT_QvN3ekr2rM52R_iVgCQMsSxE",
-  "authDomain": "double-vehicle-419406.firebaseapp.com",
-  "databaseURL": "https://double-vehicle-419406-default-rtdb.firebaseio.com",
-  "projectId": "double-vehicle-419406",
-  "storageBucket": "double-vehicle-419406.appspot.com",
-  "messagingSenderId": "813850733586",
-  "appId": "1:813850733586:web:073cde7f7bc67eb9053ccb",
-  "measurementId": "G-2GZENZ1VSZ"
+  "apiKey": "              ",
+  "authDomain": "                      ",
+  "databaseURL": "                            ",
+  "projectId": "                      ",
+  "storageBucket": "                ",
+  "messagingSenderId": "                            ",
+  "appId": "                               ",
+  "measurementId": "                          "
 }
 firebase = pyrebase.initialize_app(config)
 database = firebase.database()
@@ -343,10 +347,7 @@ except KeyboardInterrupt:
     GPIO.cleanup()
 ```
 
-Run the code
-```
-python3 laith.py
-```
+
 # Python Library for reTerminal
 
 ## Installation
