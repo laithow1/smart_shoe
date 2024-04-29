@@ -241,7 +241,7 @@ class MainActivity : AppCompatActivity() {
 
         // Define the clickable span for the GitHub link
         val githubLink = "My app source-code readme setup  documentation and more all on Github"
-        val githubUrl = "https://github.com/laithow1/smart-shoe"
+        val githubUrl = "https://github.com/laithow1/smart_shoe"
         val githubClickableSpan = createClickableSpan(githubLink, githubUrl)
 
         // Apply the clickable spans to the specified ranges of text
