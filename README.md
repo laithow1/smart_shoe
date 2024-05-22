@@ -3,8 +3,7 @@ Introduction
 IoT-based smart shoes for the blind are made using ultrasonic sensors connected to an raspberry pi board. IoT communicates with objects or people through physical objects. Technology has grown and grown in the market.
 It is extremely difficult for a blind person to move independently. They should always be dependent on others in many areas of their lives. One of the biggest problems is that they have to walk the streets. They can't figure out every obstacle in the way with an ordinary stick. So these smart shoes offer them a long-term solution. Plus, it will help them reach their destination stress-free and independently. Built with IoT technology, the shoe has multiple sensors, microcontrollers, and buzzers embedded in it. If there is an obstacle in front of the user, in our project the shoe will sound a warning through a buzzer. the integrated cam detect objects andetify them and spell the name of object to blind person via android app  Smart shoes coordinate and communicate with each other to ensure that users do not collide with obstacles.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=GEd3EM0iMgM)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GEd3EM0iMgM?si=LdXvB_VNhahpIEPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Getting Start
 Before you start this project, you may need to prepare your hardware and software in advance as described here.
