@@ -5,6 +5,8 @@ It is extremely difficult for a blind person to move independently. They should 
 
 
 [![Everything Is AWESOME](https://img.youtube.com/vi/GEd3EM0iMgM-Y/0.jpg)](https://www.youtube.com/watch?v=GEd3EM0iMgM-Y "Everything Is AWESOME")
+
+
 Getting Start
 Before you start this project, you may need to prepare your hardware and software in advance as described here.
 
