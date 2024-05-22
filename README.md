@@ -350,11 +350,4 @@ except KeyboardInterrupt:
 ```
 
 
-# Python Library for reTerminal
 
-## Installation
-
-### From PyPI
-
-# smart-shoe
-# smart-shoe
