@@ -7,7 +7,9 @@ It is extremely difficult for a blind person to move independently. They should 
 [![Smart-Shoe for blind]([https://img.youtube.com/vi/GEd3EM0iMgM-Y/0.jpg](https://github.com/laithow1/smart_shoe/assets/61605149/79726a9c-eea8-48f2-8780-e104f571e11d))](https://www.youtube.com/watch?v=GEd3EM0iMgM-Y "Smart-Shoe for blind")
 
 
-![Screenshot 2024-05-23 022523](https://github.com/laithow1/smart_shoe/assets/61605149/79726a9c-eea8-48f2-8780-e104f571e11d)
+
+
+[![Smart-Shoe for blind]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://github.com/laithow1/smart_shoe/assets/61605149/79726a9c-eea8-48f2-8780-e104f571e11d))](https://www.youtube.com/watch?v=GEd3EM0iMgM)
 
 
 Getting Start
