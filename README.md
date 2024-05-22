@@ -4,7 +4,7 @@ IoT-based smart shoes for the blind are made using ultrasonic sensors connected 
 It is extremely difficult for a blind person to move independently. They should always be dependent on others in many areas of their lives. One of the biggest problems is that they have to walk the streets. They can't figure out every obstacle in the way with an ordinary stick. So these smart shoes offer them a long-term solution. Plus, it will help them reach their destination stress-free and independently. Built with IoT technology, the shoe has multiple sensors, microcontrollers, and buzzers embedded in it. If there is an obstacle in front of the user, in our project the shoe will sound a warning through a buzzer. the integrated cam detect objects andetify them and spell the name of object to blind person via android app  Smart shoes coordinate and communicate with each other to ensure that users do not collide with obstacles.
 
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/GEd3EM0iMgM-Y/0.jpg)](https://www.youtube.com/watch?v=GEd3EM0iMgM-Y "Everything Is AWESOME")
+[![Smart-Shoe for blind](https://img.youtube.com/vi/GEd3EM0iMgM-Y/0.jpg)](https://www.youtube.com/watch?v=GEd3EM0iMgM-Y "Smart-Shoe for blind")
 
 
 Getting Start
